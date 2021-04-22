@@ -6,9 +6,9 @@
 	],
 	"Deps": [
 		{
-			"ImportPath": "bitbucket.org/kardianos/osext",
+			"ImportPath": "github.com/kardianos/osext",
 			"Comment": "null-13",
-			"Rev": "5d3ddcf53a508cc2f7404eaebf546ef2cb5cdb6e"
+			"Rev": "4336eed935e029f32562b7e8cef30b56f2701e74"
 		},
 		{
 			"ImportPath": "github.com/daviddengcn/go-colortext",
