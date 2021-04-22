@@ -1,9 +1,5 @@
 ## forego
 
-<a href="https://travis-ci.org/ddollar/forego">
-  <img align="right" src="https://travis-ci.org/ddollar/forego.svg?branch=master">
-</a>
-
 Foreman in Go.
 
 ### Installation
