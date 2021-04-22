@@ -123,7 +123,7 @@ func TestPortFromEnv(t *testing.T) {
 	os.Setenv("PORT", "4000")
 	port, err = basePort(env)
 	if err != nil {
-		t.Fatal("Can not get port: %s", err)
+		t.Fatalf("Can not get port: %s", err)
 	}
 	if port != 4000 {
 		t.Fatal("Base port should be 4000")
