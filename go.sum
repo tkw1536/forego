@@ -1,0 +1,10 @@
+github.com/daviddengcn/go-colortext v0.0.0-20130728145710-8386cd264821 h1:3egPLZsl7DjabnjdSfBDCnjEXoaqP5B63V5WEbAsJy8=
+github.com/daviddengcn/go-colortext v0.0.0-20130728145710-8386cd264821/go.mod h1:dv4zxwHi5C/8AeI+4gX4dCWOIvNi7I6JCSX0HvlKPgE=
+github.com/ddollar/dist v0.2.1-0.20150130215314-d4be91e0cd17 h1:vshcMmC5G+FQKOb/qOXySClzg3dvCLYeAJVq6u5HRDU=
+github.com/ddollar/dist v0.2.1-0.20150130215314-d4be91e0cd17/go.mod h1:TkfsGdcXTVZgoiGEoLVvzqa3qpyev3sQASghQ7Gk7OY=
+github.com/kr/pretty v0.0.0-20130510082846-bc9499caa0f4 h1:VOF8pfnliVudEzEOQLybN6eDhP5Q/LmwMnpDCBe9C4I=
+github.com/kr/pretty v0.0.0-20130510082846-bc9499caa0f4/go.mod h1:Bvhd+E3laJ0AVkG0c9rmtZcnhV0HQ3+c3YxxqTvc/gA=
+github.com/kr/text v0.0.0-20130911015532-6807e777504f h1:JaNmHIV9Eby6srQVWuiQ6n8ko2o/lG6udSRCbFZe1fs=
+github.com/kr/text v0.0.0-20130911015532-6807e777504f/go.mod h1:sjUstKUATFIcff4qlB53Kml0wQPtJVc/3fWrmuUmcfA=
+github.com/subosito/gotenv v0.1.0 h1:qrPfMw+dkLrA77HtD6S3ppWB9JjV8jhKMmeSpnuvd3Q=
+github.com/subosito/gotenv v0.1.0/go.mod h1:N0PQaV/YGNqwC0u51sEeR/aUtSLEXKX9iv69rRypqCw=
