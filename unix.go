@@ -14,7 +14,7 @@ func ShellInvocationCommand(interactive bool, root, command string) []string {
 	if interactive {
 		shellArgument = "-ic"
 	}
-	shellCommand := fmt.Sprintf("cd \"%s\"; source .profile 2>/dev/null; exec %s", root, command)
+	shellCommand := fmt.Sprintf("cd \"%s\"; [ -f .profile ] && source .profile 2>/dev/null; exec %s", root, command)
 	return []string{"sh", shellArgument, shellCommand}
 }
 
