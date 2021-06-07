@@ -88,9 +88,7 @@ func ReadEnv(filename string) (*Env, error) {
 }
 
 func (e *Env) asArray() (env []string) {
-	for _, pair := range os.Environ() {
-		env = append(env, pair)
-	}
+	env = append(env, os.Environ()...)
 
 	e.m.Range(func(name, val interface{}) bool {
 		env = append(env, fmt.Sprintf("%s=%s", name, val))
