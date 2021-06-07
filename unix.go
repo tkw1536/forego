@@ -23,7 +23,6 @@ func (p *Process) PlatformSpecificInit() {
 		p.SysProcAttr = &syscall.SysProcAttr{}
 		p.SysProcAttr.Setsid = true
 	}
-	return
 }
 
 func (p *Process) SendSigTerm() {
