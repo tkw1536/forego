@@ -68,7 +68,7 @@ func parseProcfile(r io.Reader) (*Procfile, error) {
 		}
 	}
 	if err := scanner.Err(); err != nil {
-		return nil, fmt.Errorf("Reading Procfile: %s", err)
+		return nil, fmt.Errorf("reading Procfile: %s", err)
 	}
 	return pf, nil
 }
