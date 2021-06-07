@@ -3,13 +3,10 @@ package main
 import (
 	"fmt"
 	"os"
-	"regexp"
 	"sync"
 
 	"github.com/subosito/gotenv"
 )
-
-var envEntryRegexp = regexp.MustCompile("^([A-Za-z_0-9]+)=(.*)$")
 
 type Env struct {
 	m sync.Map

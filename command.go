@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-var flagEnv string
 var flagProcfile string
 
 type Command struct {

@@ -139,7 +139,7 @@ func TestPortFromEnv(t *testing.T) {
 	}
 
 	env.Set("PORT", "forego")
-	port, err = basePort(env)
+	_, err = basePort(env)
 	if err == nil {
 		t.Fatalf("Port 'forego' should fail: %s", err)
 	}
