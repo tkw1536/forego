@@ -169,18 +169,19 @@ func (f *Forego) monitorInterrupt() {
 	}
 }
 
-func basePort(env Env) (int, error) {
+func basePort(env *Env) (int, error) {
+
 	if flagPort != defaultPort {
 		return flagPort, nil
-	} else if env["PORT"] != "" {
-		return strconv.Atoi(env["PORT"])
+	} else if port := env.Get("PORT"); port != "" {
+		return strconv.Atoi(port)
 	} else if os.Getenv("PORT") != "" {
 		return strconv.Atoi(os.Getenv("PORT"))
 	}
 	return defaultPort, nil
 }
 
-func (f *Forego) startProcess(idx, procNum int, proc ProcfileEntry, env Env, of *OutletFactory) {
+func (f *Forego) startProcess(idx, procNum int, proc ProcfileEntry, env *Env, of *OutletFactory) {
 	port, err := basePort(env)
 	if err != nil {
 		panic(err)
@@ -192,7 +193,8 @@ func (f *Forego) startProcess(idx, procNum int, proc ProcfileEntry, env Env, of 
 	workDir := filepath.Dir(flagProcfile)
 	ps := NewProcess(workDir, proc.Command, env, interactive)
 	procName := fmt.Sprint(proc.Name, ".", procNum+1)
-	ps.Env["PORT"] = strconv.Itoa(port)
+
+	ps.Env.Set("PORT", strconv.Itoa(port))
 
 	ps.Stdin = nil
 
